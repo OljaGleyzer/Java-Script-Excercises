@@ -59,3 +59,69 @@ for (let j = 0; j < even.length; j++) {
     const evenloop = even[j];
 
 } console.log(even);
+// Finctions that use Arrays
+// Excercise 8
+//Write a function that receives an array as a parameter and prints the lowest number in the array to the console. Save the changes to your JavaScript file. Reload the HTML page in your browser. You should see the lowest number in the array printed in the console. If not, investigate and fix it.
+
+
+let arrNum = [3,4,5,6]
+let lowestNum = Math.min(...arrNum);
+console.log(`The lowest number is: ${lowestNum}`); 
+
+function lowestNumber(arrNum) {
+ 
+ if (lowestNum); {console.log(`Number ${lowestNum} `);
+ }
+ 
+}
+lowestNumber(arrNum);
+ 
+//Excercise 9
+// Write a function that receives an array as a parameter and prints the biggest number in the array to the console. Save the changes to your JavaScript file. Reload the HTML page in your browser. You should see the biggest number in the array printed in the console. If not, investigate and fix it.
+let arrNum2 = [4,5,6]
+let highestNum = Math.max(...arrNum);
+console.log(`The highest number is: ${highestNum}`); 
+
+function highestNumber(arrNum) {
+ 
+ if (highestNum); {console.log(`Number ${highestNum} `);
+ }
+ 
+}
+highestNumber(arrNum2);
+
+//Excercise 10
+// Write a function that receives two parameters, an array, and an index. The function will print the value of the element at the given position (one-based) to the console. For example, given the following array and index, the function will print '6'.
+// var array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100]; var index = 1; Save the changes to your JavaScript file and check your browser console. You should see the number at the correct index printed in the console. If not, investigate and fix it
+var array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
+let indexNum = 2
+
+
+function index(array){
+    console.log(array[indexNum]);
+}
+index(array);
+
+// Excercise 11
+// Write a function that receives an array and only prints the values that repeat.
+
+// For example, given the following array and index, the function will print '6,23,33,100'.
+
+// var array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
+
+// Save the changes to your JavaScript file. Reload the HTML page in your browser. You should see an array of the repeated numbers printed in the console. If not, investigate and fix it.
+
+
+
+// Excercise 12
+// Write a simple JavaScript function to join all elements of the following array into a string.
+
+// myColor = ["Red", "Green", "White", "Black"];
+
+// Save the changes to your JavaScript file. Reload the HTML page in your browser. You should see the following in your console:
+
+// "Red", "Green", "White", "Black"
+
+// If not, investigate and fix it.
+
+myColor = ["Red", "Green", "White", "Black"];
