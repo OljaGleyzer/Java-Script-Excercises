@@ -197,11 +197,6 @@ console.log(final);
 // let uppercase = splitwords.toUpperCase(); // returns every letter capital
 // console.log(uppercase);
 
-// To do:
-// split the sentence into an array
-// loop trough the array of three words
-// each time use toUpperCase() method on the forst character
-// join the words 
 
 function capitalizeFirstLetters(phrase) {
     return phrase
@@ -215,6 +210,33 @@ function capitalizeFirstLetters(phrase) {
   //Excercise 16
  //Write a JavaScript function that finds the longest word in a phrase. For example, if x = "Web Development Tutorial", then the output should be "Development". Save your JavaScript file and reload the page. Make sure you see the correct output. If not, investigate and fix it.
  //
+//  To Do:
+//  1. make a string to an array
+//  2.define a variable max word lengths that would compage each elemnt of an array
+//  3.Iterate all elemnts of the array with the condition if the lengths of the element of an array is bigger text
+//  than the variable max Word than the variable should change to that element
  
+
+  function longestword(str){
+   
+     let arraySentence = str.split(" ");
+     let Maxwordlength = arraySentence[0];
+     
+     console.log(arraySentence);
+
+
+    for (let i = 0; i < arraySentence.length; i++) {
+         if (arraySentence[i].length > Maxwordlength.length)//; why does a semicolon produces wrong answer Tutorial
+          { Maxwordlength = arraySentence[i];
+        }
+     }
+     console.log(Maxwordlength);
+     console.log(typeof Maxwordlength);
+   }
+
+ let str = "Web Development Tutorial";
+  longestword(str);
   
-  
+
+
+    
